@@ -1,0 +1,403 @@
+
+/* =========================================
+   1. MAIN DASHBOARD
+========================================= */
+
+.dashboard-content {
+  flex: 1;
+  min-width: 0;
+  min-height: calc(100vh - 76px);
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: #f8f9fc;
+  font-family: Arial, sans-serif;
+  color: #202536;
+}
+
+
+/* =========================================
+   2. DASHBOARD HEADING
+========================================= */
+
+.dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.heading-text {
+  min-width: 0;
+}
+
+.heading-text h1 {
+  margin: 0 0 7px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #202536;
+}
+
+.heading-text p {
+  margin: 0;
+  color: #7a8193;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   3. SEARCH, FILTER AND DATE
+========================================= */
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+
+.employee-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 280px;
+  min-width: 0;
+  padding: 11px 12px;
+  box-sizing: border-box;
+  border: 1px solid #e0e4ec;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #7a8193;
+  font-size: 13px;
+}
+
+.employee-search input {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #202536;
+  font-size: 13px;
+}
+
+.employee-search input::placeholder {
+  color: #8b91a0;
+}
+
+.filter-button,
+.date-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 11px 14px;
+  border: 1px solid #e0e4ec;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #424a5d;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.date-button:hover {
+  background-color: #f1f4f9;
+}
+
+
+/* =========================================
+   4. SUMMARY CARDS CONTAINER
+========================================= */
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   5. INDIVIDUAL SUMMARY CARDS
+========================================= */
+
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 17px;
+  border: 1px solid #e7e9ef;
+  border-radius: 9px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgb(25 35 55 / 3%);
+}
+
+
+/* =========================================
+   6. CARD TOP SECTION
+========================================= */
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #6c7282;
+  font-size: 14px;
+}
+
+.card-top svg {
+  color: #525a6b;
+}
+
+
+/* =========================================
+   7. CARD NUMBERS
+========================================= */
+
+.card-number-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.card-number-row h2 {
+  margin: 12px 0;
+  color: #202536;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   8. GROWTH INDICATORS
+========================================= */
+
+.growth-badge {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #e7f7eb;
+  color: #16803d;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.warning-badge {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #fcebea;
+  color: #b94a48;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   9. CARD DESCRIPTIONS
+========================================= */
+
+.card-detail {
+  margin: 0;
+  color: #6c7282;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   10. EMPLOYEE BREAKDOWN
+========================================= */
+
+.employee-breakdown {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #6c7282;
+  font-size: 12px;
+}
+
+.employee-breakdown span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* =========================================
+   11. STATUS DOTS
+========================================= */
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.active-dot {
+  background-color: #159447;
+}
+
+.inactive-dot {
+  background-color: #c43b3b;
+}
+
+.leave-dot {
+  background-color: #e9a23b;
+}
+
+
+/* =========================================
+   12. EMPLOYEE SECTION
+========================================= */
+
+.employee-section {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin-top: 20px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border: 1px solid #e7e9ef;
+  border-radius: 9px;
+}
+
+
+/* =========================================
+   13. EMPLOYEE TABLE
+========================================= */
+
+.employee-table {
+  width: 100%;
+  min-width: 650px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+
+/* Column widths */
+
+.employee-table th:nth-child(1),
+.employee-table td:nth-child(1) {
+  width: 34%;
+}
+
+.employee-table th:nth-child(2),
+.employee-table td:nth-child(2) {
+  width: 22%;
+}
+
+.employee-table th:nth-child(3),
+.employee-table td:nth-child(3) {
+  width: 17%;
+}
+
+.employee-table th:nth-child(4),
+.employee-table td:nth-child(4) {
+  width: 17%;
+}
+
+.employee-table th:nth-child(5),
+.employee-table td:nth-child(5) {
+  width: 10%;
+  text-align: center;
+}
+
+
+/* Table headings */
+
+.employee-table thead {
+  background-color: #ffffff;
+}
+
+.employee-table th {
+  padding: 15px 14px;
+  border-bottom: 1px solid #edf0f5;
+  color: #6c7282;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+/* Table data */
+
+.employee-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 13px;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.employee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-table tbody tr:hover {
+  background-color: #f8faff;
+}
+
+
+/* =========================================
+   14. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1100px) {
+  .dashboard-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .employee-search {
+    flex: 1;
+    width: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-content {
+    padding: 18px 14px;
+  }
+
+  .heading-text h1 {
+    font-size: 23px;
+  }
+
+  .summary-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dashboard-actions {
+    justify-content: flex-start;
+  }
+
+  .employee-search {
+    flex-basis: 100%;
+  }
+}

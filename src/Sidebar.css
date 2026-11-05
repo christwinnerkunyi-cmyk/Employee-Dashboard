@@ -1,0 +1,278 @@
+
+/* =========================================
+   1. SIDEBAR LAYOUT
+========================================= */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  width: 210px;
+  min-width: 210px;
+
+  min-height: calc(100vh - 76px);
+  height: auto;
+  align-self: stretch;
+
+  padding: 18px 12px 12px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border-right: 1px solid #e9eaf0;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   2. SIDEBAR SECTIONS
+========================================= */
+
+.sidebar-sections {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   3. SECTION HEADINGS
+========================================= */
+
+.sidebar-heading {
+  margin: 0 0 11px 3px;
+
+  color: #858a99;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.4px;
+}
+
+
+/* =========================================
+   4. MENU ITEMS
+========================================= */
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  width: 100%;
+  min-height: 36px;
+  padding: 8px 9px;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #535867;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 1.3;
+
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  flex-shrink: 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   5. MENU HOVER AND ACTIVE STATES
+========================================= */
+
+.sidebar-link:hover {
+  background: #f5f7fb;
+  color: #2859d9;
+}
+
+.sidebar-link.active {
+  background: #e8f2ff;
+  border-color: #d6e5ff;
+  color: #1749b8;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   6. PROFILE FOOTER
+========================================= */
+
+.sidebar-footer {
+  flex-shrink: 0;
+  padding-top: 12px;
+  margin-top: auto;
+
+  border-top: 1px solid #f0f1f5;
+}
+
+
+/* =========================================
+   7. PROFILE CONTAINER
+========================================= */
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  min-width: 0;
+  padding: 8px;
+
+  border: 1px solid #f0f1f5;
+  border-radius: 7px;
+}
+
+
+/* =========================================
+   8. PROFILE AVATAR
+========================================= */
+
+.sidebar-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background: #e7e9ed;
+  color: #454b59;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar-profile-info strong {
+  font-size: 13px;
+}
+
+.sidebar-profile-info small {
+  font-size: 13px;
+}
+
+.sidebar-logout {
+  font-size: 11px;
+}
+
+/* =========================================
+   9. PROFILE TEXT
+========================================= */
+
+.sidebar-user {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.sidebar-user strong,
+.sidebar-user span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sidebar-user strong {
+  color: #252a3a;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.sidebar-user span {
+  color: #858a99;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   10. PROFILE ARROW
+========================================= */
+
+.profile-arrow {
+  flex-shrink: 0;
+  color: #858a99;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   11. LOGOUT BUTTON
+========================================= */
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #f0f0f3;
+  color: #353946;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #e6e7ec;
+}
+
+
+/* =========================================
+   12. SMALL SCREEN ADJUSTMENT
+========================================= */
+
+@media (max-width: 650px) {
+  .sidebar {
+    width: 200px;
+    min-width: 200px;
+    padding: 15px 10px;
+  }
+
+  .sidebar-link {
+    font-size: 12px;
+    min-height: 34px;
+  }
+}

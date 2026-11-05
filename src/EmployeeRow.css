@@ -1,0 +1,118 @@
+
+/* EMPLOYEE ROW */
+
+.employee-row td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 10px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.employee-row:hover {
+  background: #f8faff;
+}
+
+/* EMPLOYEE PHOTO AND NAME */
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.employee-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employee-info div,
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.employee-info strong,
+.employee-details strong {
+  color: #343a49;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.employee-info small,
+.employee-details small {
+  color: #858b99;
+  font-size: 10px;
+}
+
+/* STATUS */
+
+.employee-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-active {
+  color: #16803d;
+}
+
+.status-leave {
+  color: #d49b36;
+}
+
+.status-inactive {
+  color: #b94a48;
+}
+
+.status-ask {
+  color: #d49b36;
+}
+
+/* .employee-location {
+  margin-top: 4px;
+  color: #858b99;
+  font-size: 10px;
+} */
+
+.employee-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  color: #858b99;
+  font-size: 10px;
+}
+
+/* ACTION BUTTON */
+
+.employee-action {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #edf0f5;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #777f8d;
+  cursor: pointer;
+}
+
+.employee-action:hover {
+  background: #f1f4f9;
+}
+ 
+
+.employee-details small
+ {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.employee-details small svg,
+.employee-location svg {
+  font-size: 9px;
+  color: #858b99;
+}

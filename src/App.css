@@ -1,0 +1,6 @@
+ .app-body {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: calc(100vh - 76px);
+}
