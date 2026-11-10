@@ -19,7 +19,7 @@ function EmployeeRow({ employee }) {
 
       <td>
         <div className="employee-info">
-          <img src="/download.jpg" alt={employee.name} />
+          <img src={employee.avatar} alt={employee.name} />
 
           <div>
             <strong>{employee.name}</strong>
