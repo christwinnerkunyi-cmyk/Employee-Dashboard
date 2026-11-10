@@ -1,16 +1,75 @@
-# React + Vite
+# DORA – Employee Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based employee management dashboard designed to help organizations view and manage employee information through a clean and organized interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Employee directory displaying employee information.
+- Employee profile pictures and details.
+- Employee status indicators (Active, Inactive, On Leave).
+- Dashboard summary cards.
+- Sidebar navigation.
+- Responsive dashboard layout.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript
+- CSS
+- Vite
+- Font Awesome
+- Git and GitHub
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project on your computer:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/christwinnerkunyi-cmyk/Employee-Dashboard.git
+   ```
+
+2. Enter the project folder:
+
+   ```bash
+   cd Employee-Dashboard
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Project Structure
+
+```text
+Dashboard/
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── Navbar.jsx
+│   ├── Sidebar.jsx
+│   ├── Dashboard.jsx
+│   ├── EmployeeRow.jsx
+│   └── CSS files
+├── package.json
+└── README.md
+```
+
+## Author
+
+Developed as a React learning and portfolio project.
+
+## License
+
+This project is open for learning and educational purposes.
